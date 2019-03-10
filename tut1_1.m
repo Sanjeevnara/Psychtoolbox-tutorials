@@ -15,12 +15,12 @@ clearvars;
 % To draw we select the maximum of these numbers. So in a situation where we
 % have two screens attached to our monitor we will draw to the external
 % screen.
-screenNumber = 1;
+screenNumber = 0; % i use a dual screen so 0 is mac screen and 1 is external screen
 
 % Define black and white (white will be 1 and black 0). This is because
 % in general luminace values are defined between 0 and 1 with 255 steps in
 % between. All values in Psychtoolbox are defined between 0 and 1
-white = WhiteIndex(screenNumber);
+white = WhiteIndex(screenNumber); % i am not using these, i will provide direct cordinates
 black = BlackIndex(screenNumber);
 
 % Do a simply calculation to calculate the luminance value for grey. This
